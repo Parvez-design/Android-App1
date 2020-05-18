@@ -4,39 +4,185 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
 
-    <ImageView
-        android:contentDescription="@string/CoronaVirus"
-        android:id="@+id/imageView2"
+    <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="142dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/c0481846_wuhan_novel_coronavirus_illustration_spl" />
-
-    <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/barrier"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:barrierDirection="left" />
+        android:id="@+id/toolbar"
+        android:background="@color/pink">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edittext"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="30sp"/>
 
-    <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/barrier2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="left" />
+    </androidx.appcompat.widget.Toolbar>
 
-    <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/barrier3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="left" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="262dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:contentDescription="@string/CoronaVirus"
+            app:srcCompat="@drawable/c0481846_wuhan_novel_coronavirus_illustration_spl" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/strings"
+            android:textColor="@color/pink"
+            android:textSize="30sp"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/lightblack" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:text="@string/string1"
+            android:textColor="@android:color/background_dark"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TableRow>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/cases"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/deaths"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/recovered"
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/totalcases"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/totaldeaths"
+                android:textColor="@color/pink"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/totalrecovered"
+                android:textColor="@color/greendark"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:text="@string/country"
+            android:textColor="@android:color/background_dark"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+    <TableRow>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/cases"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/deaths"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/recovered"
+            android:textSize="20sp" />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Ccases"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Cdeaths"
+            android:textColor="@color/pink"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Crecovered"
+            android:textColor="@color/greendark"
+            android:textSize="20sp" />
+    </TableRow>
+    </TableLayout>
 </LinearLayout>

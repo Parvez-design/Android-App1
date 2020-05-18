@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name">shpaah project</string>
     <string name="CoronaVirus">Image</string>
+    <string name="edittext">COVID-19</string>
+    <string name="strings">Statistics</string>
+    <string name="string1">Worldwide</string>
+    <string name="deaths">Deaths</string>
+    <string name="cases">Cases</string>
+    <string name="recovered">Recovered</string>
+    <string name="country">India</string>
+    <string name="totalcases">4,525,103</string>
+    <string name="totaldeaths">303,351</string>
+    <string name="totalrecovered">1,703,742</string>
+    <string name="Ccases">85,940</string>
+    <string name="Cdeaths">2,752</string>
+    <string name="Crecovered">30,153</string>
+
 </resources>
